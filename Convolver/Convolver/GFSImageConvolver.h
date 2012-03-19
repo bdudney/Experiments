@@ -10,7 +10,7 @@
 #import <ImageIO/ImageIO.h>
 
 // this is just a debugging struct to look at the argb colors
-// coming back from the convlution, not currently used, but you
+// coming back from the convolution, not currently used, but you
 // can debug like this
 // GFSConvolverColor *color = (GFSConvolveColor *)outData;
 // then loop through color looking at color values thusly
@@ -24,6 +24,27 @@ typedef struct GFSConvolverColor {
   uint8_t b;
 } GFSConvolverColor;
 
+
+/*
+ * Use vImage to apply convolution filters to images.
+ *
+ * Create a new Image Convolver with a URL to an original image. Modify the
+ * parameters as desired (kernel, background color, divisor).
+ *
+ * The result of convolvedImage is cached and not recomputed unless one or more
+ * of the parameters is changed.
+ *
+ * The original data is also cached in the vImage format.
+ *
+ * Stuff to do:
+ *  - break the ARGB data into planar data for each component
+ *  - allow multiple convolutions to be chained
+ *  - provide a means to specify a ROI in the original image
+ *  - build a means to compare performance of this approach vs OpenGL shaders
+ *   - memory usage
+ *   - wall time for various convolutions
+ *   - performance as images get larger, esp beyond what will fit in a texture
+ */
 @interface GFSImageConvolver : NSObject
 
 + (id)imageConvolverForURL:(NSURL *)originalImageURL;
