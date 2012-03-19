@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1A3C501517893100655F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C4F1517893100655F86 /* UIKit.framework */; };
+		6E1A3C521517893100655F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C511517893100655F86 /* Foundation.framework */; };
+		6E1A3C541517893100655F86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C531517893100655F86 /* CoreGraphics.framework */; };
+		6E1A3C5A1517893100655F86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C581517893100655F86 /* InfoPlist.strings */; };
+		6E1A3C5C1517893100655F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C5B1517893100655F86 /* main.m */; };
+		6E1A3C601517893100655F86 /* GFSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */; };
+		6E1A3C631517893100655F86 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C611517893100655F86 /* MainStoryboard.storyboard */; };
+		6E1A3C661517893100655F86 /* GFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C651517893100655F86 /* GFSViewController.m */; };
+		6E1A3C6D1517899B00655F86 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6C1517899B00655F86 /* ImageIO.framework */; };
+		6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6E151789A200655F86 /* Accelerate.framework */; };
+		6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C72151789B800655F86 /* GFSImageConvolver.m */; };
+		6E1A3C7415178A4D00655F86 /* phillip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C70151789B800655F86 /* phillip.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E1A3C4B1517893100655F86 /* Convolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1A3C4F1517893100655F86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6E1A3C511517893100655F86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E1A3C531517893100655F86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6E1A3C571517893100655F86 /* Convolver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Convolver-Info.plist"; sourceTree = "<group>"; };
+		6E1A3C591517893100655F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E1A3C5B1517893100655F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E1A3C5D1517893100655F86 /* Convolver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Convolver-Prefix.pch"; sourceTree = "<group>"; };
+		6E1A3C5E1517893100655F86 /* GFSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSAppDelegate.h; sourceTree = "<group>"; };
+		6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSAppDelegate.m; sourceTree = "<group>"; };
+		6E1A3C621517893100655F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6E1A3C641517893100655F86 /* GFSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSViewController.h; sourceTree = "<group>"; };
+		6E1A3C651517893100655F86 /* GFSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSViewController.m; sourceTree = "<group>"; };
+		6E1A3C6C1517899B00655F86 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6E1A3C6E151789A200655F86 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6E1A3C70151789B800655F86 /* phillip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phillip.jpg; sourceTree = "<group>"; };
+		6E1A3C71151789B800655F86 /* GFSImageConvolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSImageConvolver.h; sourceTree = "<group>"; };
+		6E1A3C72151789B800655F86 /* GFSImageConvolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSImageConvolver.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E1A3C481517893100655F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */,
+				6E1A3C6D1517899B00655F86 /* ImageIO.framework in Frameworks */,
+				6E1A3C501517893100655F86 /* UIKit.framework in Frameworks */,
+				6E1A3C521517893100655F86 /* Foundation.framework in Frameworks */,
+				6E1A3C541517893100655F86 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E1A3C401517893100655F86 = {
+			isa = PBXGroup;
+			children = (
+				6E1A3C551517893100655F86 /* Convolver */,
+				6E1A3C4E1517893100655F86 /* Frameworks */,
+				6E1A3C4C1517893100655F86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E1A3C4C1517893100655F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A3C4B1517893100655F86 /* Convolver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E1A3C4E1517893100655F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A3C6E151789A200655F86 /* Accelerate.framework */,
+				6E1A3C6C1517899B00655F86 /* ImageIO.framework */,
+				6E1A3C4F1517893100655F86 /* UIKit.framework */,
+				6E1A3C511517893100655F86 /* Foundation.framework */,
+				6E1A3C531517893100655F86 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E1A3C551517893100655F86 /* Convolver */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A3C70151789B800655F86 /* phillip.jpg */,
+				6E1A3C71151789B800655F86 /* GFSImageConvolver.h */,
+				6E1A3C72151789B800655F86 /* GFSImageConvolver.m */,
+				6E1A3C5E1517893100655F86 /* GFSAppDelegate.h */,
+				6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */,
+				6E1A3C611517893100655F86 /* MainStoryboard.storyboard */,
+				6E1A3C641517893100655F86 /* GFSViewController.h */,
+				6E1A3C651517893100655F86 /* GFSViewController.m */,
+				6E1A3C561517893100655F86 /* Supporting Files */,
+			);
+			path = Convolver;
+			sourceTree = "<group>";
+		};
+		6E1A3C561517893100655F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A3C571517893100655F86 /* Convolver-Info.plist */,
+				6E1A3C581517893100655F86 /* InfoPlist.strings */,
+				6E1A3C5B1517893100655F86 /* main.m */,
+				6E1A3C5D1517893100655F86 /* Convolver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E1A3C4A1517893100655F86 /* Convolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1A3C691517893100655F86 /* Build configuration list for PBXNativeTarget "Convolver" */;
+			buildPhases = (
+				6E1A3C471517893100655F86 /* Sources */,
+				6E1A3C481517893100655F86 /* Frameworks */,
+				6E1A3C491517893100655F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Convolver;
+			productName = Convolver;
+			productReference = 6E1A3C4B1517893100655F86 /* Convolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E1A3C421517893100655F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GFS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Gala Factory Software, LLC";
+			};
+			buildConfigurationList = 6E1A3C451517893100655F86 /* Build configuration list for PBXProject "Convolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E1A3C401517893100655F86;
+			productRefGroup = 6E1A3C4C1517893100655F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E1A3C4A1517893100655F86 /* Convolver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E1A3C491517893100655F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1A3C5A1517893100655F86 /* InfoPlist.strings in Resources */,
+				6E1A3C631517893100655F86 /* MainStoryboard.storyboard in Resources */,
+				6E1A3C7415178A4D00655F86 /* phillip.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E1A3C471517893100655F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1A3C5C1517893100655F86 /* main.m in Sources */,
+				6E1A3C601517893100655F86 /* GFSAppDelegate.m in Sources */,
+				6E1A3C661517893100655F86 /* GFSViewController.m in Sources */,
+				6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E1A3C581517893100655F86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E1A3C591517893100655F86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E1A3C611517893100655F86 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E1A3C621517893100655F86 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E1A3C671517893100655F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6E1A3C681517893100655F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E1A3C6A1517893100655F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
+				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E1A3C6B1517893100655F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
+				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E1A3C451517893100655F86 /* Build configuration list for PBXProject "Convolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1A3C671517893100655F86 /* Debug */,
+				6E1A3C681517893100655F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1A3C691517893100655F86 /* Build configuration list for PBXNativeTarget "Convolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1A3C6A1517893100655F86 /* Debug */,
+				6E1A3C6B1517893100655F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E1A3C421517893100655F86 /* Project object */;
+}
