@@ -18,20 +18,23 @@
 
 @synthesize imageView = _imageView;
 
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.imageView.image = [self redrawnImage];
+}
+
 -(UIImage *)redrawnImage {
-  NSString *path = [[NSBundle mainBundle] pathForResource:@"phillip" ofType:@"jpg"];
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"phillip"
+                                                   ofType:@"jpg"];
   UIImage *image = [UIImage imageWithContentsOfFile:path];
-  UIGraphicsBeginImageContextWithOptions(CGSizeMake(1024.0, 768.0), YES, 0.0);
-  [image drawInRect:CGRectMake(0.0, 0.0, 1024.0, 768.0)];
+  CGSize size = CGSizeMake(1024.0, 768.0);
+  UIGraphicsBeginImageContextWithOptions(size, YES, 0.0);
+  [image drawInRect:CGRectMake(0.0, 0.0, size.width, size.height)];
   UIImage *redrawnImage = UIGraphicsGetImageFromCurrentImageContext();
   UIGraphicsEndImageContext();
   return redrawnImage;
 }
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  self.imageView.image = [self redrawnImage];
-}
 
 - (void)viewDidUnload {
   [super viewDidUnload];

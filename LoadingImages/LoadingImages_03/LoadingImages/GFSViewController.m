@@ -19,6 +19,11 @@
 
 @synthesize imageView = _imageView;
 
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.imageView.image = [self thumbnailImage];
+}
+
 -(UIImage *)thumbnailImage {
   UIImage *image = nil;
   NSString *path = [[NSBundle mainBundle] pathForResource:@"phillip"
@@ -50,10 +55,6 @@
   return image;
 }
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  self.imageView.image = [self thumbnailImage];
-}
 
 - (void)viewDidUnload {
   [super viewDidUnload];
