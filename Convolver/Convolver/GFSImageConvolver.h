@@ -18,24 +18,7 @@
 //  limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
-#import <ImageIO/ImageIO.h>
-
-// this is just a debugging struct to look at the argb colors
-// coming back from the convolution, not currently used, but you
-// can debug like this
-// GFSConvolverColor *color = (GFSConvolveColor *)outData;
-// then loop through color looking at color values thusly
-// for...
-//  printf("r = %d", color[i].r)
-// ...
-typedef struct GFSConvolverColor {
-  uint8_t a;
-  uint8_t r;
-  uint8_t g;
-  uint8_t b;
-} GFSConvolverColor;
-
+#import "GFSVImageLoader.h"
 
 /*
  * Use vImage to apply convolution filters to images.
@@ -57,7 +40,7 @@ typedef struct GFSConvolverColor {
  *   - wall time for various convolutions
  *   - performance as images get larger, esp beyond what will fit in a texture
  */
-@interface GFSImageConvolver : NSObject
+@interface GFSImageConvolver : GFSVImageLoader
 
 + (id)imageConvolverForURL:(NSURL *)originalImageURL;
 

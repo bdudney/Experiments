@@ -20,11 +20,13 @@
 
 #import "GFSViewController.h"
 #import "GFSImageConvolver.h"
+#import "GFSImageSeparator.h"
 
 @interface GFSViewController ()
 
 @property(nonatomic, strong) UIImage *originalImage;
 @property(nonatomic, strong) GFSImageConvolver *convolver;
+@property(nonatomic, strong) GFSImageSeparator *separator;
 @property(nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *divisorLabel;
 @property(nonatomic, assign) BOOL displayingConvolvedImage;
@@ -35,6 +37,7 @@
 
 @synthesize originalImage = _originalImage;
 @synthesize convolver = _convolver;
+@synthesize separator = _separator;
 @synthesize imageView = _imageView;
 @synthesize divisorLabel = _multiplierLayer;
 @synthesize displayingConvolvedImage = _displayingConvolvedImage;
@@ -59,6 +62,22 @@
   self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.convolver.convolvedImage];
 }
 
+- (IBAction)alpha:(id)sender {
+  self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.separator.alphaComponent];
+}
+
+- (IBAction)red:(id)sender {
+  self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.separator.redComponent];
+}
+
+- (IBAction)green:(id)sender {
+  self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.separator.greenComponent];
+}
+
+- (IBAction)blue:(id)sender {
+  self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.separator.blueComponent];
+}
+
 - (IBAction)sliderChanged:(UISlider *)sender {
   self.convolver.divsor = [sender value];
   self.divisorLabel.text = [NSString stringWithFormat:@"%d", self.convolver.divsor];
@@ -81,6 +100,7 @@
   [self.imageView addGestureRecognizer:tapGR];
   
   NSURL *url = [[NSBundle mainBundle] URLForResource:@"phillip" withExtension:@"jpg"];
+  self.separator = [[GFSImageSeparator alloc] initWithURL:url];
   self.convolver = [GFSImageConvolver imageConvolverForURL:url];
   self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.convolver.convolvedImage];
   self.displayingConvolvedImage = YES;

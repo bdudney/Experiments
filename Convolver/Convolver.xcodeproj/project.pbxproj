@@ -19,6 +19,8 @@
 		6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6E151789A200655F86 /* Accelerate.framework */; };
 		6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C72151789B800655F86 /* GFSImageConvolver.m */; };
 		6E1A3C7415178A4D00655F86 /* phillip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C70151789B800655F86 /* phillip.jpg */; };
+		6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */; };
+		6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		6E1A3C70151789B800655F86 /* phillip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phillip.jpg; sourceTree = "<group>"; };
 		6E1A3C71151789B800655F86 /* GFSImageConvolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSImageConvolver.h; sourceTree = "<group>"; };
 		6E1A3C72151789B800655F86 /* GFSImageConvolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSImageConvolver.m; sourceTree = "<group>"; };
+		6E80C6D3151E4D37006F02D6 /* GFSVImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSVImageLoader.h; sourceTree = "<group>"; };
+		6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSVImageLoader.m; sourceTree = "<group>"; };
+		6E80C6D6151E526D006F02D6 /* GFSImageSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSImageSeparator.h; sourceTree = "<group>"; };
+		6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSImageSeparator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				6E1A3C70151789B800655F86 /* phillip.jpg */,
+				6E80C6D3151E4D37006F02D6 /* GFSVImageLoader.h */,
+				6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */,
 				6E1A3C71151789B800655F86 /* GFSImageConvolver.h */,
 				6E1A3C72151789B800655F86 /* GFSImageConvolver.m */,
+				6E80C6D6151E526D006F02D6 /* GFSImageSeparator.h */,
+				6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */,
 				6E1A3C5E1517893100655F86 /* GFSAppDelegate.h */,
 				6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */,
 				6E1A3C611517893100655F86 /* MainStoryboard.storyboard */,
@@ -183,6 +193,8 @@
 				6E1A3C601517893100655F86 /* GFSAppDelegate.m in Sources */,
 				6E1A3C661517893100655F86 /* GFSViewController.m in Sources */,
 				6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */,
+				6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */,
+				6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +270,12 @@
 		6E1A3C6A1517893100655F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -269,10 +283,12 @@
 		6E1A3C6B1517893100655F86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -296,6 +312,7 @@
 				6E1A3C6B1517893100655F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,17 +23,13 @@
 
 @interface GFSImageConvolver()
 
-@property(nonatomic, assign) CGSize imageSize;
 @property(nonatomic, assign) short kernelWidth;
 @property(nonatomic, assign) short kernelHeight;
-@property(nonatomic, strong) NSURL *originalImageURL;
-@property(nonatomic, strong) NSData *compliantData;
 
 @end
 
 @interface GFSImageConvolver(Private)
 
-- (BOOL)loadCompliantImageData;
 - (void)releaseConvolvedImage;
 
 @end
@@ -45,18 +41,15 @@
 @synthesize divsor = _divsor;
 @synthesize backgroundColor = _backgroundColor;
 @synthesize convolvedImage = _convolvedImage;
-@synthesize imageSize = _imageSize;
 @synthesize kernelWidth = _kernelWidth;
 @synthesize kernelHeight = _kernelHeight;
-@synthesize originalImageURL = _originalImageURL;
-@synthesize compliantData = _compliantData;
 
 + (id)imageConvolverForURL:(NSURL *)originalImageURL {
   return [[self alloc] initWithURL:originalImageURL];
 }
 
 - (id)initWithURL:(NSURL *)orignalImageURL {
-  self = [super init];
+  self = [super initWithURL:orignalImageURL];
   if(nil != self) {
     short edgeDetectionKernel[] = {
       -1.0, -1.0, -1.0,
@@ -67,11 +60,6 @@
     // default to black background
     self.backgroundColor = (GFSConvolverColor){0,0,0,0};
     self.divsor = 1;
-    self.originalImageURL = orignalImageURL;
-    // load the image and get the vImage compliant data
-    if(![self loadCompliantImageData]) {
-      self = nil;
-    }
   }
   return self;
   
@@ -128,7 +116,7 @@
       _convolvedImage = (__bridge id)CGImageCreate(self.imageSize.width, self.imageSize.height,
                                                    8, 8 * 4, self.imageSize.width * 4,
                                                    colorSpace,
-                                                   kCGBitmapByteOrder32Host | kCGImageAlphaNoneSkipFirst,
+                                                   kCGBitmapByteOrder32Big | kCGImageAlphaNoneSkipFirst,
                                                    dataProviderRef,
                                                    NULL, NO, kCGRenderingIntentDefault);
       CGDataProviderRelease(dataProviderRef);
@@ -140,44 +128,8 @@
 
 @end
 
-@implementation GFSImageConvolver(Private)
 
-- (BOOL)loadCompliantImageData {
-  BOOL success = NO;
-  CGImageSourceRef imageSource = CGImageSourceCreateWithURL((__bridge CFURLRef)self.originalImageURL, NULL);
-  if(NULL != imageSource) {
-    CGImageRef imageRef = CGImageSourceCreateImageAtIndex(imageSource, 0, NULL);
-    if(NULL != imageRef) {
-      self.imageSize = CGSizeMake(CGImageGetWidth(imageRef), CGImageGetHeight(imageRef));
-      // this call is fine on iOS, but on the mac we'd want this to be
-      // more careful to buidl the correct color sapce
-      CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-      // this context conforms to the vImage requirments with alpha skip first
-      CGContextRef conformantContext = CGBitmapContextCreate(NULL, self.imageSize.width, 
-                                                             self.imageSize.height, 8, 
-                                                             4 * self.imageSize.width, 
-                                                             colorSpace,
-                                                             kCGBitmapByteOrder32Host | kCGImageAlphaNoneSkipFirst);
-      if(NULL != conformantContext) {
-        CGContextDrawImage(conformantContext, CGRectMake(0., 0., self.imageSize.width, self.imageSize.height), imageRef);
-        CGImageRef conformantImage = CGBitmapContextCreateImage(conformantContext);
-        if(NULL != conformantImage) {
-          CFDataRef dataRef = CGDataProviderCopyData(CGImageGetDataProvider(conformantImage));
-          self.compliantData = (__bridge NSData *)dataRef;
-          success = YES;
-          CFRelease(dataRef);
-        }
-        CGImageRelease(conformantImage);
-        CGContextRelease(conformantContext);
-      }
-      CGColorSpaceRelease(colorSpace);
-      CGImageRelease(imageRef);
-    }
-    CFRelease(imageSource);
-  }
-  
-  return success;
-}
+@implementation GFSImageConvolver (Private)
 
 - (void)releaseConvolvedImage {
   if(nil != _convolvedImage) {
