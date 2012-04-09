@@ -19,6 +19,7 @@
 		6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6E151789A200655F86 /* Accelerate.framework */; };
 		6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C72151789B800655F86 /* GFSImageConvolver.m */; };
 		6E1A3C7415178A4D00655F86 /* phillip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C70151789B800655F86 /* phillip.jpg */; };
+		6E6ED214152F8828003EC3CC /* GFSNoiseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6ED213152F8828003EC3CC /* GFSNoiseGenerator.m */; };
 		6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */; };
 		6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 		6E1A3C70151789B800655F86 /* phillip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phillip.jpg; sourceTree = "<group>"; };
 		6E1A3C71151789B800655F86 /* GFSImageConvolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSImageConvolver.h; sourceTree = "<group>"; };
 		6E1A3C72151789B800655F86 /* GFSImageConvolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSImageConvolver.m; sourceTree = "<group>"; };
+		6E6ED212152F8828003EC3CC /* GFSNoiseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSNoiseGenerator.h; sourceTree = "<group>"; };
+		6E6ED213152F8828003EC3CC /* GFSNoiseGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSNoiseGenerator.m; sourceTree = "<group>"; };
 		6E80C6D3151E4D37006F02D6 /* GFSVImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSVImageLoader.h; sourceTree = "<group>"; };
 		6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSVImageLoader.m; sourceTree = "<group>"; };
 		6E80C6D6151E526D006F02D6 /* GFSImageSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSImageSeparator.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				6E1A3C641517893100655F86 /* GFSViewController.h */,
 				6E1A3C651517893100655F86 /* GFSViewController.m */,
 				6E1A3C561517893100655F86 /* Supporting Files */,
+				6E6ED212152F8828003EC3CC /* GFSNoiseGenerator.h */,
+				6E6ED213152F8828003EC3CC /* GFSNoiseGenerator.m */,
 			);
 			path = Convolver;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */,
 				6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */,
 				6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */,
+				6E6ED214152F8828003EC3CC /* GFSNoiseGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

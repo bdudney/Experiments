@@ -10,4 +10,11 @@
 
 @interface GFSNoiseGenerator : NSObject
 
+- (id)initWithSize:(CGSize)size octaves:(NSUInteger)octaveCount;
+
+@property(nonatomic, assign) NSUInteger octaveCount;
+@property(nonatomic, assign) CGSize size;
+
+- (UIImage *)noiseImage;
+
 @end

@@ -39,6 +39,7 @@ typedef struct GFSConvolverColor { // this order only works for big endian
 @interface GFSVImageLoader : NSObject
 
 - (id)initWithURL:(NSURL *)orignalImageURL;
+- (id)initWithCompliantData:(NSData *)data imageSize:(CGSize)imageSize;
 
 @property(nonatomic, strong, readonly) NSURL *originalImageURL;
 @property(nonatomic, strong, readonly) NSData *compliantData;

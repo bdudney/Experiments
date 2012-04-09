@@ -65,6 +65,22 @@
   
 }
 
+- (id)initWithImageData:(NSData *)data imageSize:(CGSize)imageSize {
+  self = [super initWithCompliantData:data imageSize:imageSize];
+  if(nil != self) {
+    short blurKernel[] = {
+      1.0, 1.0, 1.0, 
+      1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0
+    };
+    [self setKernel:blurKernel width:3 height:3];
+    // default to black background
+    self.backgroundColor = (GFSConvolverColor){0,0,0,0};
+    self.divsor = 81;
+  }
+  return self;
+}
+
 // memcopy the values into a new array of widthxheight shorts
 - (void)setKernel:(short *)values width:(short)width height:(short)height {
   short *newKernel = calloc(height * width, sizeof(short));

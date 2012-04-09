@@ -42,6 +42,15 @@
   
 }
 
+- (id)initWithCompliantData:(NSData *)data imageSize:(CGSize)imageSize {
+  self = [super init];
+  if(nil != self) {
+    self.compliantData = data;
+    self.imageSize = imageSize;
+  }
+  return self;
+}
+
 @end
 
 @implementation GFSVImageLoader(Private)

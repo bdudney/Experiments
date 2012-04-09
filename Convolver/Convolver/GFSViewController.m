@@ -21,13 +21,16 @@
 #import "GFSViewController.h"
 #import "GFSImageConvolver.h"
 #import "GFSImageSeparator.h"
+#import "GFSNoiseGenerator.h"
 
 @interface GFSViewController ()
 
+@property(nonatomic, strong) GFSNoiseGenerator *noiseGenerator;
 @property(nonatomic, strong) UIImage *originalImage;
 @property(nonatomic, strong) GFSImageConvolver *convolver;
 @property(nonatomic, strong) GFSImageSeparator *separator;
 @property(nonatomic, weak) IBOutlet UIImageView *imageView;
+@property(nonatomic, weak) IBOutlet UIImageView *noiseImage;
 @property (weak, nonatomic) IBOutlet UILabel *divisorLabel;
 @property(nonatomic, assign) BOOL displayingConvolvedImage;
 
@@ -35,10 +38,12 @@
 
 @implementation GFSViewController
 
+@synthesize noiseGenerator = _noiseGenerator;
 @synthesize originalImage = _originalImage;
 @synthesize convolver = _convolver;
 @synthesize separator = _separator;
 @synthesize imageView = _imageView;
+@synthesize noiseImage = _noiseImage;
 @synthesize divisorLabel = _multiplierLayer;
 @synthesize displayingConvolvedImage = _displayingConvolvedImage;
 
@@ -105,6 +110,8 @@
   self.imageView.image = [UIImage imageWithCGImage:(__bridge CGImageRef)self.convolver.convolvedImage];
   self.displayingConvolvedImage = YES;
   self.divisorLabel.text = @"1";
+  self.noiseGenerator = [[GFSNoiseGenerator alloc] initWithSize:CGSizeMake(256.0, 256.0) octaves:1];
+  self.noiseImage.image = self.noiseGenerator.noiseImage;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

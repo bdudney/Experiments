@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -109,6 +109,10 @@
                                     <action selector="blue:" destination="2" eventType="touchUpInside" id="IMy-aV-8nS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="B65-oF-Mhc">
+                                <rect key="frame" x="643" y="393" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -117,6 +121,7 @@
                     <connections>
                         <outlet property="divisorLabel" destination="1z0-LR-ACf" id="iwN-I0-4p7"/>
                         <outlet property="imageView" destination="nOq-HK-XQw" id="Jbh-e8-CTe"/>
+                        <outlet property="noiseImage" destination="B65-oF-Mhc" id="K64-q3-EmA"/>
                         <outlet property="view" destination="5" id="Uqp-Tk-rZq"/>
                     </connections>
                 </viewController>
@@ -129,12 +134,13 @@
             <relationships>
                 <relationship kind="outlet" name="divisorLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="noiseImage" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
-        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

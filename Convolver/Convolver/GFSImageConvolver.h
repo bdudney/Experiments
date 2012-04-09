@@ -46,6 +46,8 @@
 
 - (id)initWithURL:(NSURL *)orignalImageURL;
 
+- (id)initWithImageData:(NSData *)data imageSize:(CGSize)imageSize;
+
 // memcopy the values into a new array of widthxheight shorts
 - (void)setKernel:(short *)values width:(short)width height:(short)height;
 
