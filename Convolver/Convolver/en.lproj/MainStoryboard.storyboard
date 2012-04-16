@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2Ep-yW-e9C">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Convolved View Controller - Convolved-->
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="GFSViewController" sceneMemberID="viewController">
+                <viewController title="Convolved" id="2" customClass="GFSConvolvedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="699"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="center" id="nOq-HK-XQw">
-                                <rect key="frame" x="0.0" y="-20" width="1024" height="788"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="700"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" id="b76-a0-fG1">
-                                <rect key="frame" x="39" y="684" width="134" height="23"/>
+                                <rect key="frame" x="39" y="649" width="134" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="2" eventType="valueChanged" id="QUA-a4-v5K"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1z0-LR-ACf">
-                                <rect key="frame" x="161" y="680" width="123" height="28"/>
+                                <rect key="frame" x="161" y="645" width="123" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XAw-yY-4F0">
-                                <rect key="frame" x="322" y="677" width="72" height="37"/>
+                                <rect key="frame" x="322" y="642" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Edge">
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z5g-T5-km0">
-                                <rect key="frame" x="415" y="677" width="72" height="37"/>
+                                <rect key="frame" x="415" y="642" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Blur">
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q7V-Ad-Cqv">
-                                <rect key="frame" x="637" y="676" width="72" height="37"/>
+                                <rect key="frame" x="637" y="641" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Red">
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R1M-xm-Dja">
-                                <rect key="frame" x="717" y="676" width="72" height="37"/>
+                                <rect key="frame" x="717" y="641" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Green">
@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mFZ-vj-jm2">
-                                <rect key="frame" x="797" y="676" width="72" height="37"/>
+                                <rect key="frame" x="797" y="641" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Blue">
@@ -109,32 +109,151 @@
                                     <action selector="blue:" destination="2" eventType="touchUpInside" id="IMy-aV-8nS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="B65-oF-Mhc">
-                                <rect key="frame" x="643" y="393" width="256" height="256"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Convolutioin" id="bwn-3d-IZK"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="divisorLabel" destination="1z0-LR-ACf" id="iwN-I0-4p7"/>
+                        <outlet property="imageView" destination="nOq-HK-XQw" id="Jbh-e8-CTe"/>
+                        <outlet property="view" destination="5" id="Uqp-Tk-rZq"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1314" y="151"/>
+        </scene>
+        <!--Blurred View Controller - Blurred-->
+        <scene sceneID="aFI-pM-4ly">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zJ-OV-zYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Blurred" id="7ua-ta-Iwr" customClass="GFSBlurredViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yip-Jh-fvw">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="699"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" id="vc6-bJ-4Su">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="700"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wTR-s3-QN6">
+                                <rect key="frame" x="279" y="647" width="467" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blur &amp; Blend" id="Ytl-pu-0EK"/>
+                    <connections>
+                        <outlet property="blendLabel" destination="wTR-s3-QN6" id="iKM-qO-Uuk"/>
+                        <outlet property="noiseImageView" destination="vc6-bJ-4Su" id="MXJ-Em-u11"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1055"/>
+        </scene>
+        <!--Default Image View Controller - Default Image-->
+        <scene sceneID="wQO-F8-fK0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54F-1n-Iyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="flJ-H7-PWc" customClass="GFSDefaultImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a34-TT-poV">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="699"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView contentMode="center" image="phillip.jpg" id="VM9-kH-s2j">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="700"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <tabBarItem key="tabBarItem" title="Default Image" id="9Yt-e2-Ioo"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1318" y="1948"/>
+        </scene>
+        <!--Face Detection View Controller - Face Detection-->
+        <scene sceneID="WFf-gz-giU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qre-On-LYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9rD-Fj-bim" customClass="GFSFaceDetectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nqA-oE-Kzk">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="699"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="IMG_0046.png" id="Uou-Ig-Y3T">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="699"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Face Detection" id="taM-a6-SaW"/>
                     <connections>
-                        <outlet property="divisorLabel" destination="1z0-LR-ACf" id="iwN-I0-4p7"/>
-                        <outlet property="imageView" destination="nOq-HK-XQw" id="Jbh-e8-CTe"/>
-                        <outlet property="noiseImage" destination="B65-oF-Mhc" id="K64-q3-EmA"/>
-                        <outlet property="view" destination="5" id="Uqp-Tk-rZq"/>
+                        <outlet property="imageView" destination="Uou-Ig-Y3T" id="12f-up-k4o"/>
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="1318" y="2943"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w1g-fT-8aD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecU-f7-geL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="2Ep-yW-e9C" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RaG-rg-d6P">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="KLC-gZ-F32"/>
+                        <segue destination="7ua-ta-Iwr" kind="relationship" relationship="viewControllers" id="8cv-Yo-TJ7"/>
+                        <segue destination="flJ-H7-PWc" kind="relationship" relationship="viewControllers" id="2pw-JO-fRk"/>
+                        <segue destination="9rD-Fj-bim" kind="relationship" relationship="viewControllers" id="hui-Cp-ASL"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="84" y="151"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0046.png" width="1024" height="768"/>
+        <image name="phillip.jpg" width="1024" height="768"/>
+    </resources>
     <classes>
-        <class className="GFSViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSViewController.h"/>
+        <class className="GFSBlurredViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSBlurredViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="blendLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="noiseImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="GFSConvolvedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSConvolvedViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="blendLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="divisorLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="noiseImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="noiseImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="GFSDefaultImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSDefaultImageViewController.h"/>
+        </class>
+        <class className="GFSFaceDetectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSFaceDetectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>

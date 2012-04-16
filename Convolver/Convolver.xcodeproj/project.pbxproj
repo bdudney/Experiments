@@ -14,7 +14,7 @@
 		6E1A3C5C1517893100655F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C5B1517893100655F86 /* main.m */; };
 		6E1A3C601517893100655F86 /* GFSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */; };
 		6E1A3C631517893100655F86 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A3C611517893100655F86 /* MainStoryboard.storyboard */; };
-		6E1A3C661517893100655F86 /* GFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C651517893100655F86 /* GFSViewController.m */; };
+		6E1A3C661517893100655F86 /* GFSConvolvedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C651517893100655F86 /* GFSConvolvedViewController.m */; };
 		6E1A3C6D1517899B00655F86 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6C1517899B00655F86 /* ImageIO.framework */; };
 		6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1A3C6E151789A200655F86 /* Accelerate.framework */; };
 		6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A3C72151789B800655F86 /* GFSImageConvolver.m */; };
@@ -22,6 +22,12 @@
 		6E6ED214152F8828003EC3CC /* GFSNoiseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6ED213152F8828003EC3CC /* GFSNoiseGenerator.m */; };
 		6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */; };
 		6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */; };
+		6E9D17DB153997900033B5CA /* IMG_0046.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9D17D9153997900033B5CA /* IMG_0046.png */; };
+		6E9D17DC153997900033B5CA /* IMG_0047.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E9D17DA153997900033B5CA /* IMG_0047.png */; };
+		6E9D17DF153997D00033B5CA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9D17DE153997D00033B5CA /* CoreImage.framework */; };
+		6E9D17E2153998140033B5CA /* GFSFaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D17E1153998140033B5CA /* GFSFaceDetectionViewController.m */; };
+		6EE9F9561537290200ED53F1 /* GFSBlurredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9F9551537290200ED53F1 /* GFSBlurredViewController.m */; };
+		6EE9F95A15372F6B00ED53F1 /* GFSDefaultImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9F95915372F6B00ED53F1 /* GFSDefaultImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +42,8 @@
 		6E1A3C5E1517893100655F86 /* GFSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSAppDelegate.h; sourceTree = "<group>"; };
 		6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSAppDelegate.m; sourceTree = "<group>"; };
 		6E1A3C621517893100655F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6E1A3C641517893100655F86 /* GFSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSViewController.h; sourceTree = "<group>"; };
-		6E1A3C651517893100655F86 /* GFSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSViewController.m; sourceTree = "<group>"; };
+		6E1A3C641517893100655F86 /* GFSConvolvedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSConvolvedViewController.h; sourceTree = "<group>"; };
+		6E1A3C651517893100655F86 /* GFSConvolvedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFSConvolvedViewController.m; sourceTree = "<group>"; };
 		6E1A3C6C1517899B00655F86 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		6E1A3C6E151789A200655F86 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		6E1A3C70151789B800655F86 /* phillip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phillip.jpg; sourceTree = "<group>"; };
@@ -49,6 +55,15 @@
 		6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSVImageLoader.m; sourceTree = "<group>"; };
 		6E80C6D6151E526D006F02D6 /* GFSImageSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSImageSeparator.h; sourceTree = "<group>"; };
 		6E80C6D7151E526D006F02D6 /* GFSImageSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSImageSeparator.m; sourceTree = "<group>"; };
+		6E9D17D9153997900033B5CA /* IMG_0046.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0046.png; sourceTree = "<group>"; };
+		6E9D17DA153997900033B5CA /* IMG_0047.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0047.png; sourceTree = "<group>"; };
+		6E9D17DE153997D00033B5CA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		6E9D17E0153998140033B5CA /* GFSFaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSFaceDetectionViewController.h; sourceTree = "<group>"; };
+		6E9D17E1153998140033B5CA /* GFSFaceDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSFaceDetectionViewController.m; sourceTree = "<group>"; };
+		6EE9F9541537290200ED53F1 /* GFSBlurredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSBlurredViewController.h; sourceTree = "<group>"; };
+		6EE9F9551537290200ED53F1 /* GFSBlurredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSBlurredViewController.m; sourceTree = "<group>"; };
+		6EE9F95815372F6B00ED53F1 /* GFSDefaultImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSDefaultImageViewController.h; sourceTree = "<group>"; };
+		6EE9F95915372F6B00ED53F1 /* GFSDefaultImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSDefaultImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9D17DF153997D00033B5CA /* CoreImage.framework in Frameworks */,
 				6E1A3C6F151789A200655F86 /* Accelerate.framework in Frameworks */,
 				6E1A3C6D1517899B00655F86 /* ImageIO.framework in Frameworks */,
 				6E1A3C501517893100655F86 /* UIKit.framework in Frameworks */,
@@ -70,6 +86,7 @@
 		6E1A3C401517893100655F86 = {
 			isa = PBXGroup;
 			children = (
+				6E9D17DE153997D00033B5CA /* CoreImage.framework */,
 				6E1A3C551517893100655F86 /* Convolver */,
 				6E1A3C4E1517893100655F86 /* Frameworks */,
 				6E1A3C4C1517893100655F86 /* Products */,
@@ -100,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				6E1A3C70151789B800655F86 /* phillip.jpg */,
+				6E9D17D9153997900033B5CA /* IMG_0046.png */,
+				6E9D17DA153997900033B5CA /* IMG_0047.png */,
 				6E80C6D3151E4D37006F02D6 /* GFSVImageLoader.h */,
 				6E80C6D4151E4D37006F02D6 /* GFSVImageLoader.m */,
 				6E1A3C71151789B800655F86 /* GFSImageConvolver.h */,
@@ -109,11 +128,17 @@
 				6E1A3C5E1517893100655F86 /* GFSAppDelegate.h */,
 				6E1A3C5F1517893100655F86 /* GFSAppDelegate.m */,
 				6E1A3C611517893100655F86 /* MainStoryboard.storyboard */,
-				6E1A3C641517893100655F86 /* GFSViewController.h */,
-				6E1A3C651517893100655F86 /* GFSViewController.m */,
+				6E9D17E0153998140033B5CA /* GFSFaceDetectionViewController.h */,
+				6E9D17E1153998140033B5CA /* GFSFaceDetectionViewController.m */,
+				6E1A3C641517893100655F86 /* GFSConvolvedViewController.h */,
+				6E1A3C651517893100655F86 /* GFSConvolvedViewController.m */,
 				6E1A3C561517893100655F86 /* Supporting Files */,
 				6E6ED212152F8828003EC3CC /* GFSNoiseGenerator.h */,
 				6E6ED213152F8828003EC3CC /* GFSNoiseGenerator.m */,
+				6EE9F9541537290200ED53F1 /* GFSBlurredViewController.h */,
+				6EE9F9551537290200ED53F1 /* GFSBlurredViewController.m */,
+				6EE9F95815372F6B00ED53F1 /* GFSDefaultImageViewController.h */,
+				6EE9F95915372F6B00ED53F1 /* GFSDefaultImageViewController.m */,
 			);
 			path = Convolver;
 			sourceTree = "<group>";
@@ -184,6 +209,8 @@
 				6E1A3C5A1517893100655F86 /* InfoPlist.strings in Resources */,
 				6E1A3C631517893100655F86 /* MainStoryboard.storyboard in Resources */,
 				6E1A3C7415178A4D00655F86 /* phillip.jpg in Resources */,
+				6E9D17DB153997900033B5CA /* IMG_0046.png in Resources */,
+				6E9D17DC153997900033B5CA /* IMG_0047.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,11 +223,14 @@
 			files = (
 				6E1A3C5C1517893100655F86 /* main.m in Sources */,
 				6E1A3C601517893100655F86 /* GFSAppDelegate.m in Sources */,
-				6E1A3C661517893100655F86 /* GFSViewController.m in Sources */,
+				6E1A3C661517893100655F86 /* GFSConvolvedViewController.m in Sources */,
 				6E1A3C7315178A3F00655F86 /* GFSImageConvolver.m in Sources */,
 				6E80C6D5151E4D37006F02D6 /* GFSVImageLoader.m in Sources */,
 				6E80C6D8151E526D006F02D6 /* GFSImageSeparator.m in Sources */,
 				6E6ED214152F8828003EC3CC /* GFSNoiseGenerator.m in Sources */,
+				6EE9F9561537290200ED53F1 /* GFSBlurredViewController.m in Sources */,
+				6EE9F95A15372F6B00ED53F1 /* GFSDefaultImageViewController.m in Sources */,
+				6E9D17E2153998140033B5CA /* GFSFaceDetectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +306,12 @@
 		6E1A3C6A1517893100655F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bill Dudney (JQ82639868)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "68123605-A9DF-4D24-B0A4-A3801E4132BB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -289,12 +319,12 @@
 		6E1A3C6B1517893100655F86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bill Dudney (JQ82639868)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "68123605-A9DF-4D24-B0A4-A3801E4132BB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
