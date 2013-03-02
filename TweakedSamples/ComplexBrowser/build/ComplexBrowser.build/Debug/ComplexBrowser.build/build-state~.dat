@@ -1,0 +1,294 @@
+TComplexBrowser
+v7
+r0
+t305244998.755789
+cCheck dependencies
+cProcessInfoPlistFile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Info.plist Info-ComplexBrowser.plist
+cCopyStringsFile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib
+cCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib
+cCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib
+cProcessPCH /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch.gch ComplexBrowser_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/main.o /Users/bdudney/Development/ComplexBrowser/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemBrowserCell.o /Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/AppController.o /Users/bdudney/Development/ComplexBrowser/AppController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemNode.o /Users/bdudney/Development/ComplexBrowser/FileSystemNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser normal i386
+cTouch /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004C5342BA00000000000000EE
+t1280524986
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/bdudney/Development/ComplexBrowser/AppController.h
+c000000004BA3F5680000000000000AEC
+t1269036392
+s2796
+i<Cocoa/Cocoa.h>
+
+N/Users/bdudney/Development/ComplexBrowser/AppController.m
+c000000004BA3F5680000000000003796
+t1269036392
+s14230
+i"AppController.h"
+i"FileSystemNode.h"
+i"FileSystemBrowserCell.h"
+
+N/Users/bdudney/Development/ComplexBrowser/ComplexBrowser_Prefix.pch
+c000000004A0E57CB000000000000009F
+t1242453963
+s159
+i<Cocoa/Cocoa.h>
+
+N/Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib
+c000000004A0E57CB0000000000003904
+t1242453963
+s14596
+
+N/Users/bdudney/Development/ComplexBrowser/English.lproj/InfoPlist.strings
+c000000004A0E57CB000000000000005C
+t1242453963
+s92
+
+N/Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib
+c000000004A0E57CB0000000000027389
+t1242453963
+s160649
+
+N/Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib
+c000000004A0E57CB00000000000029B3
+t1242453963
+s10675
+
+N/Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.h
+c000000004BA3F5680000000000000A97
+t1269036392
+s2711
+i<Cocoa/Cocoa.h>
+
+N/Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m
+c000000004BA3F5680000000000001755
+t1269036392
+s5973
+i"FileSystemBrowserCell.h"
+
+N/Users/bdudney/Development/ComplexBrowser/FileSystemNode.h
+c000000004BA3F5680000000000000C08
+t1269036392
+s3080
+i<Cocoa/Cocoa.h>
+
+N/Users/bdudney/Development/ComplexBrowser/FileSystemNode.m
+c000000004BA3F5680000000000001752
+t1269036392
+s5970
+i"FileSystemNode.h"
+
+N/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/AppController.o
+t1283552198
+s46512
+
+N/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/ComplexBrowser.LinkFileList
+c000000004C8173A70000000000000210
+t1283552167
+s528
+
+N/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemBrowserCell.o
+t1283552198
+s25412
+
+N/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemNode.o
+t1283552197
+s20380
+
+N/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/main.o
+t1283552197
+s4860
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app
+t1283552198
+s102
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Info.plist
+t1283552167
+s793
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser
+t1283552198
+s35024
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/PkgInfo
+t1283552167
+s8
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/HeaderView.nib
+t1283552172
+s5025
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1283552168
+s92
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/MainMenu.nib
+t1283552172
+s29597
+
+N/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/PreviewView.nib
+t1283552172
+s3834
+
+N/Users/bdudney/Development/ComplexBrowser/main.m
+c000000004BA3F5680000000000000A01
+t1269036392
+s2561
+i<Cocoa/Cocoa.h>
+
+N/var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch.gch
+t1283552190
+s56903472
+
+NInfo-ComplexBrowser.plist
+c000000004A0E57CB000000000000035A
+t1242453963
+s858
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies305244967#305244967#0(0"0(0#1#0"29836824280170608#0"0#
+
+CCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/AppController.o /Users/bdudney/Development/ComplexBrowser/AppController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305244990.945141
+e305244998.102027
+r1
+xCompileC
+xbuild/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/AppController.o
+x/Users/bdudney/Development/ComplexBrowser/AppController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/bdudney/Development/ComplexBrowser/AppController.m305244990#305244998#0(0"0(0#0#57"/Users/bdudney/Development/ComplexBrowser/AppController.m8754817440#1635"    cd /Users/bdudney/Development/ComplexBrowser    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-generated-files.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-own-target-headers.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-all-target-headers.hmap -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-project-headers.hmap -F/Users/bdudney/Development/ComplexBrowser/build/Debug -I/Users/bdudney/Development/ComplexBrowser/build/Debug/include -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources/i386 -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources -include /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch -c /Users/bdudney/Development/ComplexBrowser/AppController.m -o /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/AppController.o0#
+
+CCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemBrowserCell.o /Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305244990.943562
+e305244998.045577
+r1
+xCompileC
+xbuild/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemBrowserCell.o
+x/Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m305244990#305244998#0(0"0(0#0#65"/Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m8755893696#1651"    cd /Users/bdudney/Development/ComplexBrowser    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-generated-files.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-own-target-headers.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-all-target-headers.hmap -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-project-headers.hmap -F/Users/bdudney/Development/ComplexBrowser/build/Debug -I/Users/bdudney/Development/ComplexBrowser/build/Debug/include -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources/i386 -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources -include /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch -c /Users/bdudney/Development/ComplexBrowser/FileSystemBrowserCell.m -o /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemBrowserCell.o0#
+
+CCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemNode.o /Users/bdudney/Development/ComplexBrowser/FileSystemNode.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305244990.946887
+e305244997.898564
+r1
+xCompileC
+xbuild/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemNode.o
+x/Users/bdudney/Development/ComplexBrowser/FileSystemNode.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@66"Compile /Users/bdudney/Development/ComplexBrowser/FileSystemNode.m305244990#305244997#0(0"0(0#0#58"/Users/bdudney/Development/ComplexBrowser/FileSystemNode.m8754181952#1637"    cd /Users/bdudney/Development/ComplexBrowser    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-generated-files.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-own-target-headers.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-all-target-headers.hmap -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-project-headers.hmap -F/Users/bdudney/Development/ComplexBrowser/build/Debug -I/Users/bdudney/Development/ComplexBrowser/build/Debug/include -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources/i386 -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources -include /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch -c /Users/bdudney/Development/ComplexBrowser/FileSystemNode.m -o /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/FileSystemNode.o0#
+
+CCompileC build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/main.o /Users/bdudney/Development/ComplexBrowser/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s305244990.898526
+e305244997.786541
+r1
+xCompileC
+xbuild/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/main.o
+x/Users/bdudney/Development/ComplexBrowser/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/bdudney/Development/ComplexBrowser/main.m305244990#305244997#0(0"0(0#0#48"/Users/bdudney/Development/ComplexBrowser/main.m8812315648#1617"    cd /Users/bdudney/Development/ComplexBrowser    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-generated-files.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-own-target-headers.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-all-target-headers.hmap -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-project-headers.hmap -F/Users/bdudney/Development/ComplexBrowser/build/Debug -I/Users/bdudney/Development/ComplexBrowser/build/Debug/include -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources/i386 -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources -include /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch -c /Users/bdudney/Development/ComplexBrowser/main.m -o /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib
+s305244967.274475
+e305244972.500158
+r1
+xCompileXIB
+x/Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib
+lSLF07#2@39"CompileXIB English.lproj/HeaderView.xib305244967#305244972#0(0"0(0#0#70"/Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib8626885248#384"    cd /Users/bdudney/Development/ComplexBrowser    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/HeaderView.nib /Users/bdudney/Development/ComplexBrowser/English.lproj/HeaderView.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib
+s305244967.273088
+e305244972.398575
+r1
+xCompileXIB
+x/Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib305244967#305244972#0(0"0(0#0#68"/Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib8632713664#380"    cd /Users/bdudney/Development/ComplexBrowser    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/MainMenu.nib /Users/bdudney/Development/ComplexBrowser/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCompileXIB /Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib
+s305244967.273870
+e305244972.499884
+r1
+xCompileXIB
+x/Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib
+lSLF07#2@40"CompileXIB English.lproj/PreviewView.xib305244967#305244972#0(0"0(0#0#71"/Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib8630683872#386"    cd /Users/bdudney/Development/ComplexBrowser    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/PreviewView.nib /Users/bdudney/Development/ComplexBrowser/English.lproj/PreviewView.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s305244967.250170
+e305244968.224088
+r1
+xCopyStringsFile
+x/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings305244967#305244968#0(0"0(0#0#73"/Users/bdudney/Development/ComplexBrowser/English.lproj/InfoPlist.strings8608654848#379"    cd /Users/bdudney/Development/ComplexBrowser    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Resources/English.lproj0#
+
+CLd /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser normal i386
+s305244998.102115
+e305244998.752916
+r1
+xLd
+x/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser
+xnormal
+xi386
+lSLF07#2@107"Link /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser305244998#305244998#0(0"0(0#0#0"8632368192#588"    cd /Users/bdudney/Development/ComplexBrowser    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/bdudney/Development/ComplexBrowser/build/Debug -F/Users/bdudney/Development/ComplexBrowser/build/Debug -filelist /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/Objects-normal/i386/ComplexBrowser.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/MacOS/ComplexBrowser0#
+
+CProcessInfoPlistFile /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Info.plist Info-ComplexBrowser.plist
+s305244967.241098
+e305244967.250073
+r1
+xProcessInfoPlistFile
+x/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Info.plist
+xInfo-ComplexBrowser.plist
+lSLF07#2@33"Process Info-ComplexBrowser.plist305244967#305244967#0(0"0(0#0#67"/Users/bdudney/Development/ComplexBrowser/Info-ComplexBrowser.plist32088430820720740#340"    cd /Users/bdudney/Development/ComplexBrowser    builtin-infoPlistUtility Info-ComplexBrowser.plist -genpkginfo /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch.gch ComplexBrowser_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s305244972.500288
+e305244990.898245
+r1
+xProcessPCH
+x/var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch.gch
+xComplexBrowser_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile ComplexBrowser_Prefix.pch305244972#305244990#0(0"0(0#0#67"/Users/bdudney/Development/ComplexBrowser/ComplexBrowser_Prefix.pch8755787776#1515"    cd /Users/bdudney/Development/ComplexBrowser    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-generated-files.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-own-target-headers.hmap -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-all-target-headers.hmap -iquote /Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/ComplexBrowser-project-headers.hmap -F/Users/bdudney/Development/ComplexBrowser/build/Debug -I/Users/bdudney/Development/ComplexBrowser/build/Debug/include -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources/i386 -I/Users/bdudney/Development/ComplexBrowser/build/ComplexBrowser.build/Debug/ComplexBrowser.build/DerivedSources -c /Users/bdudney/Development/ComplexBrowser/ComplexBrowser_Prefix.pch -o /var/folders/g3/g3RoFxmCGSGZjV0HY9lkXk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ComplexBrowser_Prefix-higpvotzvgsrxvcauddudwghcknp/ComplexBrowser_Prefix.pch.gch0#
+
+CTouch /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app
+s305244998.752998
+e305244998.755744
+r1
+xTouch
+x/Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app
+lSLF07#2@78"Touch /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app305244998#305244998#0(0"0(0#0#0"8747963328#144"    cd /Users/bdudney/Development/ComplexBrowser    /usr/bin/touch -c /Users/bdudney/Development/ComplexBrowser/build/Debug/ComplexBrowser.app0#
+
