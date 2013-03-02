@@ -48,7 +48,7 @@
 
 - (id)initWithImageData:(NSData *)data imageSize:(CGSize)imageSize;
 
-// memcopy the values into a new array of widthxheight shorts
+// memcopy the values into a new array of width x height shorts
 - (void)setKernel:(short *)values width:(short)width height:(short)height;
 
 @property(nonatomic, assign) int32_t divsor;

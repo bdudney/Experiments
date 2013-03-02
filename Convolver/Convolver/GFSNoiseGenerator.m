@@ -124,19 +124,6 @@ uint8_t l;
 
 - (UIImage *)noiseImage {
   if(nil == self.bluredImage) {
-//    CGDataProviderRef dataProviderRef = CGDataProviderCreateWithCFData((__bridge CFDataRef)self.baseNoise);
-//    // divice RGB is fine for iOS but for the Mac we'd want to be more creative
-//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
-//    CGImageRef image = CGImageCreate(self.size.width, self.size.height,
-//                                     4, 8 * 2, self.size.width * 2,
-//                                     colorSpace,
-//                                     kCGBitmapByteOrder32Big | kCGImageAlphaNoneSkipFirst,
-//                                     dataProviderRef,
-//                                     NULL, NO, kCGRenderingIntentDefault);
-//    self.perlinNoiseImage = [UIImage imageWithCGImage:image];
-//    CGImageRelease(image);
-//    CGDataProviderRelease(dataProviderRef);
-//    CGColorSpaceRelease(colorSpace);
     UIGraphicsBeginImageContext(self.size);
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(ctx, [[UIColor whiteColor] CGColor]);
