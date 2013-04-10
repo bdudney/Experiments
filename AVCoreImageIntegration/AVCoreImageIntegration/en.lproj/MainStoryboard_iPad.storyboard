@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="0nK-Ky-oaT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="IF4-7i-z1n">
+            <objects>
+                <viewController id="0nK-Ky-oaT" customClass="GFSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wtn-FK-FW7" customClass="GLKView">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qJ4-SE-mng" appends="YES" id="ic9-Rz-cqA"/>
+                            <outletCollection property="gestureRecognizers" destination="ea4-vd-hdA" appends="YES" id="M1D-qF-4xQ"/>
+                        </connections>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Za-KY-cbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qJ4-SE-mng" userLabel="Start Capture GR">
+                    <connections>
+                        <action selector="startCapture:" destination="0nK-Ky-oaT" id="0wl-Li-tHx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="ea4-vd-hdA" userLabel="Stop Capture GR">
+                    <connections>
+                        <action selector="stopCapture:" destination="0nK-Ky-oaT" id="uKb-Qe-ROX"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-663" y="-411"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="GFSViewController" superclassName="GLKViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GFSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startCapture:"/>
+                <relationship kind="action" name="stopCapture:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
