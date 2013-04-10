@@ -69,7 +69,7 @@ void main()
     rgb = mat3(      1,       1,      1,
                      0, -.18732, 1.8556,
                1.57481, -.46813,      0) * yuv;
-    
+
     gl_FragColor = vec4(rgb, 1);
 }
 

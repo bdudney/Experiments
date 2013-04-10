@@ -306,12 +306,12 @@
 		6E1A3C6A1517893100655F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bill Dudney (JQ82639868)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "68123605-A9DF-4D24-B0A4-A3801E4132BB";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -319,12 +319,12 @@
 		6E1A3C6B1517893100655F86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bill Dudney (JQ82639868)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Convolver/Convolver-Prefix.pch";
 				INFOPLIST_FILE = "Convolver/Convolver-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "68123605-A9DF-4D24-B0A4-A3801E4132BB";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
