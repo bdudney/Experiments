@@ -90,7 +90,6 @@ GLfloat gCubeVertexData[6 * 6 * 8] = {
   GLuint _program;
   
   GLKMatrix4 _modelViewProjectionMatrix;
-  GLKMatrix3 _normalMatrix;
   GLKMatrix4 _modelViewProjectionMatrix2;
   float _rotation;
   
@@ -441,8 +440,6 @@ static NSInteger droppedFrameCount = 0;
     modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, 1.5f);
     modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotation, 1.0f, 1.0f, 1.0f);
     modelViewMatrix = GLKMatrix4Multiply(baseModelViewMatrix, modelViewMatrix);
-    
-    _normalMatrix = GLKMatrix3InvertAndTranspose(GLKMatrix4GetMatrix3(modelViewMatrix), NULL);
     
     _modelViewProjectionMatrix = GLKMatrix4Multiply(projectionMatrix, modelViewMatrix);
 
