@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AVCoreImageIntegration/GFSViewController.m"
-         timestampString = "387254705.899387"
+         timestampString = "387255057.046396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "364"
-         endingLineNumber = "364"
+         startingLineNumber = "363"
+         endingLineNumber = "363"
          landmarkName = "-setupCoreImageFramebuffer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AVCoreImageIntegration/GFSViewController.m"
-         timestampString = "387254705.899387"
+         timestampString = "387255057.046396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "371"
-         endingLineNumber = "371"
+         startingLineNumber = "370"
+         endingLineNumber = "370"
          landmarkName = "-setupCoreImageFramebuffer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AVCoreImageIntegration/GFSViewController.m"
-         timestampString = "387254705.899387"
+         timestampString = "387255057.046396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "382"
-         endingLineNumber = "382"
+         startingLineNumber = "381"
+         endingLineNumber = "381"
          landmarkName = "-setupCoreImageFramebuffer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AVCoreImageIntegration/GFSViewController.m"
-         timestampString = "387254705.899387"
+         timestampString = "387255057.046396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "404"
-         endingLineNumber = "404"
+         startingLineNumber = "403"
+         endingLineNumber = "403"
          landmarkName = "-setupCoreImageFramebuffer"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AVCoreImageIntegration/GFSViewController.m"
-         timestampString = "387254705.899387"
+         timestampString = "387255057.046396"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "324"
-         endingLineNumber = "324"
+         startingLineNumber = "323"
+         endingLineNumber = "323"
          landmarkName = "-captureOutput:didOutputSampleBuffer:fromConnection:"
          landmarkType = "5">
       </FileBreakpoint>

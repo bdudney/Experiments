@@ -1,0 +1,1 @@
+http://johansorensen.com/articles/pausing%20and%20controlling%20the%20speed%20of%20Core%20Animation.html
